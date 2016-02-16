@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <style>
+	.title {
+		text-align:center;
+		padding-top:30px;
+	}
+	.button {
+		margin-top:15px;
+	}
+	#mainPage {
+		background-image:url("images/pageOne.jpg")
+		background-size:cover;
+		width:100%;
+	}
+   </style>
+  </head>
+  <body>
+	<div class="container" id="mainPage">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 title">
+				<h1>Weather Predictor</h1>
+				<p class="lead">Enter your city below to get a forecast for the weather</p>
+				<input type="text" class="form-control" placeholder="Enter you city" />
+				<button type="submit" class="btn btn-success btn-md button">Find My Weather</button>
+			</div>
+		</div>
+	</div>
+	
+    <script type="text/javascript" src="jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		$("#mainPage").css("min-height",$(window).height());
+		
+	</script>
+  </body>
+</html>
